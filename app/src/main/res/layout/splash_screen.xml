@@ -8,15 +8,14 @@
 
     <ImageView
         android:id="@+id/imgLogoID"
-        android:layout_width="422dp"
-        android:layout_height="365dp"
-        android:layout_marginTop="4dp"
+        android:layout_width="362dp"
+        android:layout_height="321dp"
+        android:layout_marginTop="28dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/principal"
-        />
+        app:srcCompat="@drawable/principal" />
 
     <com.airbnb.lottie.LottieAnimationView
         android:layout_width="wrap_content"

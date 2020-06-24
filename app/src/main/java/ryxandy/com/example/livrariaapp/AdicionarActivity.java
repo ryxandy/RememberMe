@@ -32,7 +32,7 @@ ActionBar actionBar;
 
 
         actionBar = getSupportActionBar();
-        actionBar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#833AB4")));
+        actionBar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#5851DB")));
 
     edtNome = findViewById(R.id.edtNome);
      edtAutor = findViewById(R.id.edtAutor);
@@ -57,6 +57,35 @@ ActionBar actionBar;
      });
 
 
+
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
+        //Home itebm
+        bottomNavigationView.setSelectedItemId(R.id.about);
+        //O que vai acontecer quando selecionar esse item
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+                switch (menuItem.getItemId()){
+                    case  R.id.adicionar:
+                       // startActivity(new Intent(getApplicationContext(),AdicionarActivity.class));
+                        //overridePendingTransition(0,0);
+                        return true;
+
+                    case  R.id.Home:
+                        startActivity(new Intent(getApplicationContext(),MainActivity.class));
+                        overridePendingTransition(0,0);
+                        return true;
+
+                    case  R.id.about:
+                         startActivity(new Intent(getApplicationContext(),AboutActivity.class));
+                         overridePendingTransition(0,0);
+                        return true;
+
+                }
+
+                return false;
+            }
+        });
 
 
 

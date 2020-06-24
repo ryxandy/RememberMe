@@ -28,7 +28,7 @@ public class AboutActivity extends AppCompatActivity {
         actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(false);
         actionBar.setHomeButtonEnabled(false);
-        actionBar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#833AB4")));
+        actionBar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#5851DB")));
 
 
         //ImageView imgwip = findViewById(R.id.imgWip);

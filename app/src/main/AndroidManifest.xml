@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ryxandy.com.example.livrariaapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/iclogo"
+        android:label="Remember-Me"
+        android:roundIcon="@mipmap/iclogo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar">
+        <activity android:name=".AtualizarActivty"
+            android:parentActivityName=".AtualizarActivty">
+        </activity>
+        <activity
+            android:name=".AdicionarActivity"
+            android:label="Adicionar Filme"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".SplashActivity"
+            android:label="RememberMe">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity"
+            android:parentActivityName=".MainActivity">
+        </activity>
+        <activity android:name=".AboutActivity"
+            android:label="Sobre mim"
+            android:parentActivityName=".MainActivity">
+        </activity>
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

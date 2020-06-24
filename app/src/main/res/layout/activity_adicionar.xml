@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_bgc"
+    android:padding="30dp"
+    tools:context=".AdicionarActivity">
+
+    <EditText
+        android:id="@+id/edtNome"
+        android:layout_width="0dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="88dp"
+        android:background="@android:color/transparent"
+        android:drawableRight="@drawable/claquetee"
+        android:ems="10"
+        android:hint="Escreva o nome do filme"
+        android:inputType="textPersonName"
+        android:textColorHint="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtAutor"
+        android:layout_width="0dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="192dp"
+        android:background="@android:color/transparent"
+        android:drawableRight="@drawable/diretor"
+        android:ems="10"
+        android:hint="Escreva o nome do diretor"
+        android:inputType="textPersonName"
+        android:textColorHint="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.916"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtPagina2"
+        android:layout_width="0dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="32dp"
+        android:background="@android:color/transparent"
+        android:drawableRight="@drawable/estrela"
+        android:ems="10"
+        android:hint="Nota final"
+        android:inputType="number"
+        android:textColorHint="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtAutor" />
+
+
+    <Button
+        android:id="@+id/btnAdicionar"
+        android:layout_width="329dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="56dp"
+        android:background="@color/material_on_background_emphasis_high_type"
+        android:text="Adicionar"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.39"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtPagina2"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
